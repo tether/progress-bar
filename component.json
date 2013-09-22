@@ -1,0 +1,17 @@
+{
+  "name": "progress-bar",
+  "repo": "petrofeed/progress-bar",
+  "description": "A simple piece of UI to show progress through a set of steps in a checkout, creation of something, etc.",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ],
+  "styles": [
+    "progress-bar.css"
+  ]
+}
