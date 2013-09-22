@@ -9,10 +9,10 @@ module.exports = ProgressBar;
 /**
  * Creates a new progress bar with the provided html element.
  * 
- * @param  {jQuery element} el The parent html element that contains the progress bar.
+ * @param  {String} el The selector of the html element that contains the progress bar markup.
  */
-var ProgressBar = function (el) {
-  this.$el = $(el).find('.progress-bar');
+var ProgressBar = function (selector) {
+  this.$el = $(selector);
   this.$steps = this.$el.find('.steps').children();
   this.$lastStep = $(this.$steps[this.$steps.length-2]);
   this.$lastStep.addClass('last-step');
