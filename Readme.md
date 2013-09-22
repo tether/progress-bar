@@ -2,6 +2,9 @@
 
 A simple piece of UI to show progress through a set of steps in a checkout, creation of something, etc.
 
+![alt tag](http://f.cl.ly/items/0s1l1p2O2N2o0g291v0U/Screen%20Shot%202013-09-22%20at%2011.53.28%20AM.png)
+![alt tag](http://f.cl.ly/items/1n390s213i0q1d1p0h0w/Screen%20Shot%202013-09-22%20at%2011.54.12%20AM.png)
+
 ## Installation
 
   Install with [component(1)](http://component.io):
