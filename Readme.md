@@ -51,3 +51,10 @@ Two events are fired from the progress bar via jQuery:
 `finished`: Triggered when the last step is set to active.
 
 `error`: Triggered when the progress bar's error step is made active.
+
+---
+
+Proudly brought to you by [PetroFeed](http://PetroFeed.com).
+
+
+![Pedro](https://www.petrofeed.com/img/company/pedro.png)
