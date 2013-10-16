@@ -1,5 +1,3 @@
-var $ = require('jquery');
-
 /**
  * Expose 'ProgressBar'
  */
@@ -64,7 +62,6 @@ ProgressBar.prototype.changeActiveStep = function (step) {
 
   if (!this.hasStep(step)) {
     throw "Step not found in available steps for progress bar.";
-    return;
   }
 
   if (step === this.$errorStep.data('name')) {
@@ -90,9 +87,7 @@ ProgressBar.prototype.changeActiveStep = function (step) {
     if (step === this.$lastStep.data('name')) {
       this.$el.addClass(this.$el.attr('aria-finished-classes'))
               .removeClass(
-                this.$el.attr('aria-active-classes')
-                + ' '
-                + this.$el.attr('aria-error-classes')
+                this.$el.attr('aria-active-classes') + ' ' + this.$el.attr('aria-error-classes')
               );
 
       this.$lastStep.show();
@@ -112,9 +107,7 @@ ProgressBar.prototype.showErrorStep = function () {
   this.$el.find('.steps .active').removeClass('active');
   
   this.$el.removeClass(
-      this.$el.attr('aria-active-classes')
-      + ' '
-      + this.$el.attr('aria-finished-classes')
+      this.$el.attr('aria-active-classes') + ' ' + this.$el.attr('aria-finished-classes')
     )
     .addClass(this.$el.attr('aria-error-classes'));
 
