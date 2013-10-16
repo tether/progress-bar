@@ -9,7 +9,7 @@ module.exports = ProgressBar;
  * 
  * @param  {String} el The selector of the html element that contains the progress bar markup.
  */
-var ProgressBar = function (selector) {
+function ProgressBar( selector ) {
   this.$el = $(selector);
   this.$steps = this.$el.find('.steps').children();
   this.$lastStep = $(this.$steps[this.$steps.length-2]);
@@ -19,7 +19,7 @@ var ProgressBar = function (selector) {
   this.setStepWidth();
   this.setBarWidth(this.stepWidth);
   this.$el.addClass(this.$el.attr('aria-active-classes'));
-};
+}
 
 
 /**
