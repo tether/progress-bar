@@ -104,6 +104,7 @@ ProgressBar.prototype.changeActiveStep = function (step) {
  * and adding the error class.
  */
 ProgressBar.prototype.showErrorStep = function () {
+  this.$el.find('.progress-bar').removeClass('active').addClass('error');
   this.$el.find('.steps .active').removeClass('active');
   
   this.$el.removeClass(
